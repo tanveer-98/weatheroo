@@ -1,0 +1,27 @@
+{
+  "name": "react-blogapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "yarn watch",
+    "vite": "yarn vite",
+    "server": "cd client && yarn watch --prefix server",
+    "client": "cd server && yarn vite --prefix client",
+    "build": "cd client && tsc && vite build",
+    "dev": "concurrently \"cd server && yarn dev:watch\" \"cd client && yarn vite\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@heroicons/react": "^2.0.12",
+    "@types/react-icons": "^3.0.0",
+    "concurrently": "^7.5.0",
+    "formik": "^2.2.9",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "@types/react-scroll": "^1.8.4"
+  }
+}
