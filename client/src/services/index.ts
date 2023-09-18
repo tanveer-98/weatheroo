@@ -1,5 +1,5 @@
 const API_KEY = 'da91ffa5236ee2eca6d44819b94a5284'
-const BASE_URL = 'http://api.openweathermap.org/data/2.5'
+const BASE_URL = 'https://api.openweathermap.org/data/2.5'
 
 // https://api.openweathermap.org/data/2.5/onecall?lat= & lon= &exclude=current,minutely,hourly,alert&appid=da91ffa5236ee2eca6d44819b94a5284&units=metric
 
