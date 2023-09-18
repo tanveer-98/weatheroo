@@ -47,10 +47,10 @@ const SearchBox = ({handleSetQuery}:any) => {
               id="location-search-box"
               onInputChange={(event, value) => setLocation(value)}
               options={suggestions}
-              sx={{ width: 300, color: 'white' }}
-              className="outline-white border-white font-extralight text-white"
+              sx={{ color: 'white' }}
+              className="w-[150px] md:w-[250px] outline-white border-white font-extralight text-white"
               renderInput={(params) => (
-                <TextField {...params} label="Location" />
+                <TextField {...params} label="Set Location" />
               )}
               onChange={(event: any, newValue: any) => {
                 if (newValue !== null) setLocation(newValue!.label)
@@ -60,7 +60,7 @@ const SearchBox = ({handleSetQuery}:any) => {
               <AiOutlineSearch className="text-2xl text-white" />
             </button>
           </div>
-          <div className="flex flex-row space-x-4">
+          <div className="flex flex-row ">
             <LightTooltip title="Get Current Location">
               <button type="button" className="bg-blue">
                 <FaLocationDot
