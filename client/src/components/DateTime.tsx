@@ -6,7 +6,7 @@ const date = formatToLocalTime(dt,timezone)
   return (
     <>
       <div className="flex items-center justify-center my-12">
-        <p className="text-white text-xl font-extralight">
+        <p className="text-center text-white text-xl font-extralight">
           {date}
         </p>
       </div>
